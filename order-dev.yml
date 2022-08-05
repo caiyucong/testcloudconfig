@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: order-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    password: '050325'
+    username: root
+    url: jdbc:mysql:///homework?serverTimezone=UTC
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:7001/eureka
+    fetch-registry: true
+    register-with-eureka: true
