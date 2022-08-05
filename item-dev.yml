@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: item-service
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    username: root
+    password: '050325'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///homework?serverTimezone=UTC
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:7001/eureka
+    fetch-registry: true
+    register-with-eureka: true
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
